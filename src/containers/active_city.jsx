@@ -10,6 +10,9 @@ function mapStateToProps(state) {
 
 class ActiveCity extends Component {
   render () {
+    const style = {
+      width: "100%"
+    };
     let cityName = "";
     let cityAdress = "";
     let cityImage = "";
@@ -23,7 +26,7 @@ class ActiveCity extends Component {
       <div className="active-city">
         <h1>{cityName}</h1>
         <h2>{cityAdress}</h2>
-        <img src={cityImage} />
+        <img src={cityImage} style={style} />
       </div>
     );
   }
